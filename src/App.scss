@@ -1,0 +1,72 @@
+.darkTheme {
+  background-color: grey;
+  min-height: 100vh;
+  transition: background-color 600ms ease-in;
+
+  nav {
+    background-color: #121212;
+    color: #fff;
+    transition: all 600ms ease-in;
+
+    .switch {
+      background-color: #fff;
+      transition: background-color 600ms ease-in;
+    }
+  }
+
+  .mainContent {
+    color: #fff;
+    transition: all 600ms ease-in;
+  }
+}
+
+.lightTheme {
+
+  nav {
+    background-color: #fff;
+    transition: all 600ms ease-in;
+
+    .switch {
+      background-color: #121212;
+      transition: background-color 600ms ease-in;
+    }
+  }
+
+  .mainContent {
+    color: #000;
+    transition: all 600ms ease-in;
+  }
+}
+
+.mainContent {
+  min-height: 450px;
+  margin: 0 auto;
+  padding: 40px;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #121212;
+  align-items: center;
+  list-style: none;
+  height: 50px;
+  padding: 20px 50px 20px 50px;
+
+  .switch {
+    width: 40px;
+    height: 40px;
+    padding: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+
+    img {
+      width: 20px;
+      height: 20px;
+    }
+  }
+}
